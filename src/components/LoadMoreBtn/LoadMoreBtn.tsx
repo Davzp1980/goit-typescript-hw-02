@@ -1,5 +1,9 @@
 import css from './LoadMoreBtn.module.css';
-function LoadMoreBtn({ onLoadMoreBtn }) {
+
+interface LoadMoreBtnProps {
+  onLoadMoreBtn: () => void;
+}
+function LoadMoreBtn({ onLoadMoreBtn }: LoadMoreBtnProps) {
   return (
     <div className={css.div}>
       <button className={css.btn} type="button" onClick={onLoadMoreBtn}>
