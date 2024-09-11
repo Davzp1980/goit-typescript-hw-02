@@ -97,7 +97,7 @@ function App() {
       />
       {loader && (
         <div className="loader">
-          <ColorRing className="loader" />
+          <ColorRing />
         </div>
       )}
 
